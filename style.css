@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ 
+ img{
+   height: 100%;
+   width: 100%;
+ }
+ 
+ .debug{
+   background-color: rgba(250, 128, 114, 0.442);
+   border: 1px solid firebrick;
+ }
+ 
+ .main-wrapper{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .carusel-canva{
+   position: relative;
+   width: 65%;
+   height: 60%;
+ }
+ 
+ .carusel-image{
+   height: 100%;
+   object-fit:cover;
+ }
+ 
+ .arrow{
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   background-color: #ffffff80;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 2rem;
+   color: darkred;
+   transition: all .3s;
+   line-height: 40px;
+   text-align: center;
+   cursor: pointer;
+ }
+ 
+ .arrow:hover{
+   background-color: white;
+   color: red;
+ }
+ 
+ .down{
+   bottom: 5px;
+ 
+ }
+ 
+ .up{
+   top: 5px;
+ }
+ 
+ .hide{
+   display: none;
+ }
