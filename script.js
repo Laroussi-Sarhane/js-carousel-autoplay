@@ -12,12 +12,16 @@ const images = [
   "img/05.webp",
 ]
 
+play();
+
 // elements
 const caruselImage = document.querySelector(".carusel-image")
 // arrows
 const upArrow = document.querySelector(".up")
 const downArrow = document.querySelector(".down")
 
+
+let loopcarosel = '';
 
 // counter
 let counter = 0
@@ -48,10 +52,7 @@ upArrow.addEventListener("click", function(){
   }
 
   // se il counter raggiunge l ultimo elemento dell array la freccia su acquisisce hide
-
-
   downArrow.classList.remove("hide")
-
 
   // console.log(counter);
 
@@ -88,3 +89,12 @@ imagesCollection[counter].classList.remove("hide");
 
 
 console.log( imagesCollection);
+ //function
+
+ function play(){
+  loopcarosel = setInterval(upArrow, 3000);
+ }
+
+ function stop (){
+  clearInterval(loopcarosel);
+ }
